@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {"id": "Artificial Intelligence", "group": 1},
+    {"id": "Learning", "group": 1},
+    {"id": "Deductive", "group": 1},
+    {"id": "Inductive", "group": 1},
+    {"id": "Perception", "group": 1},
+    {"id": "Planning", "group": 1},
+    {"id": "Reinforcement Learning", "group": 1},
+    {"id": "Knowledge Representations", "group": 1},
+    {"id": "Semantic Networks", "group": 1},
+    {"id": "Supervised Learning", "group": 1},
+    {"id": "Unsupervised Learning", "group": 1},
+    {"id": "Semi-supervised Learning", "group": 1},
+    {"id": "Support Vector Machines", "group": 2},
+    {"id": "Computer Vision", "group": 1},
+    {"id": "Convolutional Neural Network", "group": 2},
+    {"id": "Deep Q Learning", "group": 2},
+    {"id": "Learning to play video games", "group": 3}
+  ],
+  "links": [
+    {"source": "Artificial Intelligence", "target": "Learning", "value": 1},
+    {"source": "Learning", "target": "Deductive", "value": 1},
+    {"source": "Learning", "target": "Inductive", "value": 1},
+    {"source": "Inductive", "target": "Supervised Learning", "value": 1},
+    {"source": "Inductive", "target": "Unsupervised Learning", "value": 1},
+    {"source": "Inductive", "target": "Semi-supervised Learning", "value": 1},
+    {"source": "Supervised Learning", "target": "Support Vector Machines", "value": 1},
+
+    {"source": "Artificial Intelligence", "target": "Perception", "value": 1},
+    {"source": "Perception", "target": "Computer Vision", "value": 1},
+    {"source": "Computer Vision", "target": "Convolutional Neural Network", "value": 1},
+
+    {"source": "Artificial Intelligence", "target": "Planning", "value": 1},
+
+    {"source": "Planning", "target": "Reinforcement Learning", "value": 1},
+    {"source": "Supervised Learning", "target": "Reinforcement Learning", "value": 1},
+    {"source": "Reinforcement Learning", "target": "Deep Q Learning", "value": 1},
+    {"source": "Deep Q Learning", "target": "Learning to play video games", "value": 1},
+
+    {"source": "Artificial Intelligence", "target": "Knowledge Representations", "value": 1},
+    {"source": "Knowledge Representations", "target": "Semantic Networks", "value": 1}
+  ]
+}
